@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.cursoandroid.cadastroaluno.FormularioActivity" >
+
+    <!-- primeiro item do menu -->
+    <item
+        android:id="@+id/menu_novo"
+        android:icon="@drawable/ic_novo"
+        android:title="@string/novo"
+        app:showAsAction="always"/>
+
+    <!-- segundo item do menu -->
+    <item
+        android:id="@+id/menu_mapa"
+        android:icon="@drawable/ic_mapa"
+        android:showAsAction="always"
+        android:title="@string/mapa"/>
+
+    <!-- Mais itens do menu aqui -->
+    <!-- trabalhando com subitens do menu -->
+    <item
+        android:icon="@drawable/ic_opcoes"
+        android:showAsAction="always"
+        android:title="@string/mais_opcoes">
+        <menu>
+            <item
+                android:id="@+id/menu_enviar_alunos"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"
+                android:title="@string/sincronizar">
+            </item>
+            <item
+                android:id="@+id/menu_receber_provas"
+                android:icon="@drawable/ic_receber"
+                android:showAsAction="always"
+                android:title="@string/provas">
+            </item>
+            <item
+                android:id="@+id/menu_preferencias"
+                android:icon="@drawable/ic_preferencias"
+                android:showAsAction="always"
+                android:title="@string/preferencias">
+            </item>
+        </menu>
+    </item>
+
+</menu>
